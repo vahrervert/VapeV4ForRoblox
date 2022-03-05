@@ -1,5 +1,5 @@
 repeat task.wait() until game:IsLoaded() == true
-
+shared.VapeDeveloper = true
 local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		if not isfile("vape/"..scripturl) then
