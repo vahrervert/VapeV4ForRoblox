@@ -41,8 +41,7 @@ local whitelisted = {
 	},
 	owners = {
 		"66ed442039083616d035cd09a9701e6c225bd61278aaad11a759956172144867ed1b0dc1ecc4f779e6084d7d576e49250f8066e2f9ad86340185939a7e79b30f",
-		
-		"55273f4b0931f16c1677680328f2784842114d212498a657a79bb5086b3929c173c5e3ca5b41fa3301b62cccf1b241db68a85e3cd9bbe5545b7a8c6422e7f0d2"
+		"bd59fb83543dd2b3e9f72816715211de11202c63a52fa4b75dcbd54a368f48f0bd39f4705d7ee99f37ebefb6f74c4ce5b83811ff1066f58df9e5ff61a5becca7",
 	},
 	chattags = {
 		["a"] = {
@@ -57,7 +56,7 @@ local whitelisted = {
 	}
 }
 pcall(function()
-	whitelisted = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://github.com/vahrervert/whitelists/blob/main/whitelist2.json", true))
+	whitelisted = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/vahrervert/whitelists/main/whitelist2.json", true))
 end)
 
 local RenderStepTable = {}
